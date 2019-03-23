@@ -1,0 +1,61 @@
+{% extends "./public/xsDefaultTemp.html" %} 
+{% block content %}
+<link rel="stylesheet" type="text/css" href="/plugins/waterfall/css/default.css" />
+<link rel="stylesheet" type="text/css" href="/plugins/waterfall/css/component.css" />
+<link rel="stylesheet" type="text/css" href="/plugins/colorbox/example3/colorbox.css" />
+<script src="/plugins/waterfall/js/modernizr.custom.js"></script>
+<!-- //banner -->
+<!--/w3_short-->
+<div class="services-breadcrumb">
+	<div class="agile_inner_breadcrumb">
+
+		<ul class="w3_short">
+			<li><a href="index.html">首页</a><span>|</span></li>
+			<li>项目展示</li>
+		</ul>
+	</div>
+</div>
+<!--//w3_short-->
+
+<div class="arts">
+		
+				<ul class="grid effect-3" id="grid">
+				<!-- {% for item in documentList.docs %}
+				<li><a class="group2" href="/themes/xs/images/3.png"><img src="{{item.sImg}}"></a></li>
+				  {% else %}
+					<li>This would display if the 'item' collection were empty</li>
+				  {% endfor %} -->
+				
+				</ul>
+				<div>
+						<button type="button" class="btn btn-info btn-lg">下一页→</button>
+				</div>
+				</div>
+				{% block selfjs%}
+				<script src="/plugins/waterfall/js/masonry.pkgd.min.js"></script>
+<script src="/plugins/waterfall/js/imagesloaded.js"></script>
+<script src="/plugins/waterfall/js/classie.js"></script>
+<script src="/plugins/waterfall/js/AnimOnScroll.js"></script>
+<script src="/plugins/colorbox/jquery.colorbox.js"></script>
+
+
+<script>
+	$(function(){
+
+		new AnimOnScroll( document.getElementById( 'grid' ), {
+			minDuration : 0.4,
+			maxDuration : 0.7,
+			viewportFactor : 0.2
+		} );
+		$(".group2").colorbox({
+			maxWidth:'900px',
+			maxHeight:'600px',
+			rel:'group2', 
+			transition:"fade"
+		
+		});
+	})
+		</script>
+				{% endblock %}
+
+{% endblock%}

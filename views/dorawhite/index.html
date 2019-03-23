@@ -1,0 +1,374 @@
+{% extends "./public/xsDefaultTemp.html" %} 
+{% block content %} 
+<div class="main_agileits" id="page">
+	<div class="agile_wthree_nav">
+		<nav class="navbar navbar-default">
+			<div class="navbar-header navbar-left">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				<h1><a class="navbar-brand" href="/"><span><i class="fa fa-magic" aria-hidden="true"></i></span>百微</a></h1>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+
+			<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+				{% include "./public/xsNav.html" %}
+			</div>
+			<div class="agile_search">
+				<!-- cd-search -->
+				<div class="cd-main-header">
+					<ul class="cd-header-buttons">
+						<li><a class="cd-search-trigger" href="#cd-search"> <span></span></a></li>
+					</ul>
+					<!-- cd-header-buttons -->
+				</div>
+				<div id="cd-search" class="cd-search agileinfo">
+					<form action="#" method="post">
+						<input name="Search" type="search" placeholder="Click enter after typing...">
+					</form>
+				</div>
+				<!-- //cd-search -->
+
+			</div>
+		</nav>
+
+	</div>
+
+	<div class="s1">
+		<h3>成都百微</h3>
+		<p>出色的策划能力、丰富的执行经验，勇于探索的工作精神，赢得了业界的高度认可和肯定。</p>
+		<div class="w3-button">
+			<div class="w3ls-button">
+				<a href="single.html" class="hvr-shutter-out-vertical">更多</a>
+			</div>
+			<div class="w3l-button">
+				<a href="#portfolio" class="hvr-shutter-out-vertical scroll ">介绍</a>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+
+	</div>
+
+	<div class="slides-box">
+		<ul class="slides">
+			{% for item in adsList.docs %}
+            <li style="background-image: url({{item.items[0].sImg}})"></li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>
+<!-- /banner_bottom_w3ls_agile -->
+<div class="banner_bottom_w3ls_agile">
+	<div class="banner_bottom_w3ls_info">
+		<h2 class="agile_heading">品牌宣传</h2>
+		<p>2018年，百微经过对鹧鸪山的整体分析，利用网红探寻粉红雪的活动，结合抖音、微博、旅游网站等，将鹧鸪山打造成新一代网红拍照圣地。从而制作了一场教科书式的鹧鸪山营销案例。</p>
+		<div class="agileits-button">
+			<a href="single.html" class="read hvr-shutter-out-vertical">更多</a>
+		</div>
+	</div>
+</div>
+<!-- //banner_bottom_w3ls_agile -->
+<!-- /services -->
+<div class="agile_services">
+	<div class="col-md-6 agile_services_img_wthree">
+	</div>
+	<div class="col-md-6 agile_inner_grids">
+		<h3 class="agile_heading two">我们的优势</h3>
+		<div class="w3ls-markets-grid_top">
+			<div class="col-md-6 w3ls-markets-grid">
+				<div class="agileits-icon-grid">
+					<div class="icon-left">
+						<i class="fa fa-laptop" aria-hidden="true"></i>
+					</div>
+					<div class="icon-right">
+						<h5>一条龙服务</h5>
+						<p>无论是创意、媒介、活动、视频，百微均能为你提供一站式综合服务。</p>
+					</div>
+					<div class="clearfix"> </div>
+
+				</div>
+			</div>
+			<div class="col-md-6 w3ls-markets-grid">
+				<div class="agileits-icon-grid">
+					<div class="icon-left">
+						<i class="fa fa-pencil" aria-hidden="true"></i>
+					</div>
+					<div class="icon-right">
+						<h5>文化</h5>
+						<p>真诚列于百微企业文化首条，也是我们对所有员工的最基本要求。</p>
+					</div>
+					<div class="clearfix"> </div>
+
+				</div>
+			</div>
+			<div class="col-md-6 w3ls-markets-grid">
+				<div class="agileits-icon-grid">
+					<div class="icon-left">
+						<i class="fa fa-pied-piper" aria-hidden="true"></i>
+					</div>
+					<div class="icon-right">
+						<h5>资金</h5>
+						<p>百微具有强大的资本背景支持，力争做成都本土最专业的文化传播机构。</p>
+					</div>
+					<div class="clearfix"> </div>
+
+				</div>
+			</div>
+			<div class="col-md-6 w3ls-markets-grid">
+				<div class="agileits-icon-grid">
+					<div class="icon-left">
+						<i class="fa fa-camera-retro" aria-hidden="true"></i>
+					</div>
+					<div class="icon-right">
+						<h5>多元化</h5>
+						<p>广告制作、视频制作、媒介宣传、演艺策划会议会展、活动执行。</p>
+					</div>
+					<div class="clearfix"> </div>
+
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<div class="clearfix"> </div>
+</div>
+<!-- //services -->
+<div class="portfolio-agileinfo" id="portfolio">
+	<h3 class="agile_heading">案例</h3>
+	<p class="sub_cap">2018年，百微经过对鹧鸪山的整体分析，利用网红探寻粉红雪的活动，结合抖音、微博、旅游网站等，将鹧鸪山打造成新一代网红拍照圣地。从而制作了一场教科书式的鹧鸪山营销案例。</p>
+	<div class="agile_inner_info">
+		<div class="agile_port_w3ls_info">
+			<div class="col-md-6 portfolio-grids_left">
+				<div class="col-md-6 portfolio-grids" data-aos="zoom-in">
+					<a href="/themes/xs/images/3.png" class="b-link-stripe b-animate-go lightninBox" data-lb-group="1">
+							<img src="/themes/xs/images/3.png" class="img-responsive" alt="w3ls" />
+							<div class="b-wrapper two">
+								<i class="fa fa-magic" aria-hidden="true"></i>
+							</div>
+						</a>
+				</div>
+				<div class="col-md-6 portfolio-grids" data-aos="zoom-in">
+					<a href="/themes/xs/images/4.png" class="b-link-stripe b-animate-go lightninBox" data-lb-group="1">
+							<img src="/themes/xs/images/4.png" class="img-responsive" alt="w3ls" />
+							<div class="b-wrapper">
+							<i class="fa fa-magic" aria-hidden="true"></i>
+								
+							</div>
+						</a>
+				</div>
+				<div class="col-md-6 portfolio-grids" data-aos="zoom-in">
+					<a href="/themes/xs/images/5.png" class="b-link-stripe b-animate-go lightninBox" data-lb-group="1">
+							<img src="/themes/xs/images/5.png" class="img-responsive" alt="w3ls" />
+							<div class="b-wrapper">
+								<i class="fa fa-magic" aria-hidden="true"></i>
+								
+							</div>
+						</a>
+				</div>
+			</div>
+			<div class="col-md-6 portfolio-grids_left">
+				<div class="col-md-6 portfolio-grids" data-aos="zoom-in">
+					<a href="/themes/xs/images/8.png" class="b-link-stripe b-animate-go lightninBox" data-lb-group="1">
+							<img src="/themes/xs/images/8.png" class="img-responsive" alt="w3ls" />
+							<div class="b-wrapper two">
+								<i class="fa fa-magic" aria-hidden="true"></i>
+								
+							</div>
+						</a>
+				</div>
+				<div class="col-md-6 portfolio-grids" data-aos="zoom-in">
+					<a href="/themes/xs/images/6.png" class="b-link-stripe b-animate-go lightninBox" data-lb-group="1">
+							<img src="/themes/xs/images/6.png" class="img-responsive" alt="w3ls" />
+							<div class="b-wrapper">
+								<i class="fa fa-magic" aria-hidden="true"></i>
+								
+							</div>
+						</a>
+				</div>
+				<div class="col-md-6 portfolio-grids" data-aos="zoom-in">
+					<a href="/themes/xs/images/7.png" class="b-link-stripe b-animate-go lightninBox" data-lb-group="1">
+							<img src="/themes/xs/images/7.png" class="img-responsive" alt="w3ls" />
+							<div class="b-wrapper">
+								<i class="fa fa-magic" aria-hidden="true"></i>
+								
+							</div>
+						</a>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!-- stats -->
+<div class="stats" id="stats">
+	<div class="container">
+		<div class="agile_inner_info_stats">
+			<div class="col-md-3 w3layouts_stats_left w3_counter_grid">
+				<i class="fa fa-laptop" aria-hidden="true"></i>
+				<p class="counter">45</p>
+				<h3>项目</h3>
+			</div>
+			<div class="col-md-3 w3layouts_stats_left w3_counter_grid1">
+				<i class="fa fa-smile-o" aria-hidden="true"></i>
+				<p class="counter">165</p>
+				<h3>成员</h3>
+			</div>
+			<div class="col-md-3 w3layouts_stats_left w3_counter_grid2">
+				<i class="fa fa-trophy" aria-hidden="true"></i>
+				<p class="counter">563</p>
+				<h3>奖项</h3>
+			</div>
+			<div class="col-md-3 w3layouts_stats_left w3_counter_grid3">
+				<i class="fa fa-user" aria-hidden="true"></i>
+				<p class="counter">245</p>
+				<h3>用户群体</h3>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!-- //stats -->
+<!-- /services -->
+<div class="featured_services">
+	<div class="container">
+		<h3 class="agile_heading">宣传视频</h3>
+		<p class="sub_cap">百微视频部门已完成包括美的集团、百威啤酒、松下618、格力空调618、BEATS 耳机、摩拜单车城市宣传片、灰腾麦克风等广告视频拍摄，并与多家公司达成年度拍摄协议。</p>
+		<div class="agile_inner_info">
+			<div class="col-md-4 w3_agile_services_grid">
+				<div class="agile_services_grid">
+					<div class="hover06 column">
+						<div>
+							<figure><img src="/themes/xs/images/10.png" alt=" " class="img-responsive"></figure>
+						</div>
+					</div>
+					<div class="agile_services_grid_pos">
+						<i class="fa fa-cubes" aria-hidden="true"></i>
+					</div>
+				</div>
+				<h4>摩拜单车</h4>
+				<p>摩拜单车，英文名mobike，是由胡玮炜创办的北京摩拜科技有限公司研发的互联网短途出行解决方案，是无桩借还车模式的智能硬件。人们通过智能手机就能快速租用和归还一辆摩拜单车，用可负担的价格来完成一次几公里的市内骑行。</p>
+			</div>
+			<div class="col-md-4 w3_agile_services_grid">
+				<div class="agile_services_grid">
+					<div class="hover06 column">
+						<div>
+							<figure><img src="/themes/xs/images/11.png" alt=" " class="img-responsive"></figure>
+						</div>
+					</div>
+					<div class="agile_services_grid_pos">
+						<i class="fa fa-line-chart" aria-hidden="true"></i>
+					</div>
+				</div>
+				<h4>百威啤酒</h4>
+				<p>百威啤酒诞生于1876年，由阿道弗斯·布希创办。它采用质量最佳的纯天然 材料，以严谨的工艺控制，通过自然发酵，低温储藏而酿成。整个生产流程中不使用任何人造成份、添加剂或防腐剂。</p>
+			</div>
+			<div class="col-md-4 w3_agile_services_grid">
+				<div class="agile_services_grid">
+					<div class="hover06 column">
+						<div>
+							<figure><img src="/themes/xs/images/12.png" alt=" " class="img-responsive"></figure>
+						</div>
+					</div>
+					<div class="agile_services_grid_pos">
+						<i class="fa fa-cog" aria-hidden="true"></i>
+					</div>
+				</div>
+				<h4>Beats耳机</h4>
+				<p>Studio耳机属于重低音和高音方面类型的耳机。低音方面饱满有震撼力，加上外观比较潮流时尚，是很多潮人必备耳机。Mixr混音师耳机属于低音清晰高音方面饱满有力的耳机。</p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!-- //services -->
+<!-- /testimonials-->
+<div class="agile_testimonials" id="about-us">
+	<div class="col-md-6 testmonial_agile_info">
+		<h3 class="agile_heading two">我们团队</h3>
+		<p>一个好的团队是对客户的最基本尊重，所幸我们拥有这样的一个团队;百微具有专业人才对目前市场上新兴的营销手段及方式进行跟踪分析，力求为客户带来最与时俱进的方案。</p>
+		<div class="agileits-button two">
+			<a href="single.html" class="read scroll hvr-shutter-out-vertical">更多</a>
+		</div>
+	</div>
+	<div class="col-md-6 clients_agile_slider">
+		<div id="owl-demo" class="owl-carousel owl-theme">
+			<div class="item">
+				<div class="agile_tesimonials_content">
+					<div class="about-midd-main">
+						<img class="agile-img" src="/themes/xs/images/person-xs.png" alt=" " class="img-responsive">
+						<h4>执行总监：薛山</h4>
+						<p>成都知名策展人，多年来为成都数十个品牌企业策划上百场会展会议活动，对线下活动执行、会展策划、广告制作等方面具有深厚的经验与得到的见解。</p>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="agile_tesimonials_content">
+					<div class="about-midd-main">
+						<img class="agile-img" src="/themes/xs/images/person-lxy.png" alt=" " class="img-responsive">
+						<h4>执行总监：罗铉也</h4>
+						<p>导演，原CCTV微电影频道栏目制片人，独立导演拍摄政府宣传片、商业广告片、MV等各类型视频制作片。</p>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="agile_tesimonials_content">
+					<div class="about-midd-main">
+						<img class="agile-img" src="/themes/xs/images/person-ly.png" alt=" " class="img-responsive">
+						<h4>执行总监：林宇</h4>
+						<p>资深媒体人，具备多年媒体从业经验。擅长于品牌策划、品牌传播、网络营销、危机管理。</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<div class="clearfix"> </div>
+</div>
+<!-- //testimonials-->
+
+{% endblock %}
+{% block selfjs %}
+
+
+<link rel="stylesheet " href="/themes/xs/css/chocolat.css " type="text/css " media="screen ">
+<script src="/themes/xs/js/poposlides.js">
+</script>
+
+	<!-- js for portfolio lightbox -->
+<script src="/themes/xs/js/jquery.chocolat.js "></script>
+<script type="text/javascript" src="/themes/xs/js/move-top.js"></script>
+<script type="text/javascript" src="/themes/xs/js/easing.js"></script>
+
+<script>
+	$(document).ready(function () {
+		$(".slides").poposlides();
+		$('.portfolio-grids a').Chocolat();
+		$('.counter').countUp();
+		$(".scroll").click(function (event) {
+			event.preventDefault();
+			$('html,body').animate({
+				scrollTop: $(this.hash).offset().top
+			}, 1000);
+		});
+		$().UItoTop({
+			easingType: 'easeOutQuart'
+		});
+		$("#owl-demo").owlCarousel({
+			items: 1,
+			itemsDesktop: [768, 1],
+			itemsDesktopSmall: [414, 1],
+			lazyLoad: true,
+			autoPlay: true,
+			navigation: true,
+			navigationText: false,
+			pagination: true,
+
+		});
+
+	});
+</script>
+{% endblock %}
