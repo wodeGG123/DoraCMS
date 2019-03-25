@@ -202,6 +202,8 @@ let mainCtrl = {
                     pageData.adsList = await mainCtrl.getAdsList(req, res, next);
                 } else if (md.action == 'get_adminlogin_Info') {
                     pageData.pageType = 'adminlogin';
+                } else if (md.action == 'get_xs_arts'){
+                    pageData.pageType = req.query.page
                 }
             }
 
@@ -287,7 +289,7 @@ let mainCtrl = {
         Object.assign(req.query, queryParams);
         req.query.state = true;
         pageData[documentKey] = await mainCtrl.getDocumentList(req, res, next);
-        res.render(settings.SYSTEMTEMPFORDER + defaultTemp.data.alias + '/' + req.query.tempPage, pageData)
+        // res.render(settings.SYSTEMTEMPFORDER + defaultTemp.data.alias + '/' + req.query.tempPage, pageData)
     }
 
 }

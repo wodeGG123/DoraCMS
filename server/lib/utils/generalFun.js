@@ -138,7 +138,12 @@ let generalFun = {
 
     async getDataForXsPage(req,res,next){
         req.query.tempPage = req.query.page+".html"
-        await mainCtrl.getXsPageData(req, res, next);
+        req.query.modules = [
+            { action: 'get_document_list', params: { current: req.query.current } },
+            { action: 'get_xs_arts' },
+        
+        ];
+        await mainCtrl.getPageData(req, res, next);
     }
 
 }
